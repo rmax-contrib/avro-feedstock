@@ -17,9 +17,11 @@ requirements:
     build:
         - cmake
         - snappy
+        - jansson
         - zlib 1.2.*
     run:
         - snappy
+        - jansson
         - zlib 1.2.*
 
 test:
