@@ -6,7 +6,7 @@ package:
 
 source:
     fn: avro-c-{{ version }}.tar.gz
-    url: http://www-us.apache.org/dist/avro/avro-{{ version }}/c/avro-c-{{ version }}.tar.gz
+    url: https://www-us.apache.org/dist/avro/avro-{{ version }}/c/avro-c-{{ version }}.tar.gz
     sha1: cbb698682d662c5e0abec023dcd37ce1f3db80d4
     patches:
         # Patch to enable compression using snappy.  Addressed in avro 1.8.0 by AVRO-1560
