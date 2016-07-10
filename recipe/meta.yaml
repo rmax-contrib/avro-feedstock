@@ -1,4 +1,4 @@
-{% set version = "1.7.7" %}
+{% set version = "1.8.1" %}
 
 package:
     name: avro
@@ -7,10 +7,7 @@ package:
 source:
     fn: avro-c-{{ version }}.tar.gz
     url: https://www-us.apache.org/dist/avro/avro-{{ version }}/c/avro-c-{{ version }}.tar.gz
-    sha1: cbb698682d662c5e0abec023dcd37ce1f3db80d4
-    patches:
-        # Patch to enable compression using snappy.  Addressed in avro 1.8.0 by AVRO-1560
-        - make.patch
+    sha1: 93abae3d078e34900c1fee38fb0af2dcde624c8b
 
 build:
     number: 0
@@ -20,9 +17,14 @@ requirements:
     build:
         - cmake
         - snappy
+        - jansson
+        - xz
+        - pkg-config  # [osx]
         - zlib 1.2.*
     run:
+        - xz
         - snappy
+        - jansson
         - zlib 1.2.*
 
 test:
