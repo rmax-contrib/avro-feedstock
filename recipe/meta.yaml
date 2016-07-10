@@ -18,9 +18,11 @@ requirements:
         - cmake
         - snappy
         - jansson
+        - xz
         - pkg-config  # [osx]
         - zlib 1.2.*
     run:
+        - xz
         - snappy
         - jansson
         - zlib 1.2.*
