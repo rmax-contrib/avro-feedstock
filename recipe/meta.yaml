@@ -10,7 +10,7 @@ source:
     sha1: 93abae3d078e34900c1fee38fb0af2dcde624c8b
 
 build:
-    number: 0
+    number: 1
     skip: True  # [win]
 
 requirements:
@@ -18,11 +18,11 @@ requirements:
         - cmake
         - snappy
         - jansson
-        - xz
+        - xz 5.2.*
         - pkg-config  # [osx]
         - zlib 1.2.*
     run:
-        - xz
+        - xz 5.2.*
         - snappy
         - jansson
         - zlib 1.2.*
