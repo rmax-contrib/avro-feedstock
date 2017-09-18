@@ -1,4 +1,5 @@
-{% set version = "1.8.1" %}
+{% set version = "1.8.2" %}
+{% set hash = "5d7cc534873d7fce31fb97b9abb7ccd15d6de728" %}
 
 package:
     name: avro
@@ -7,10 +8,10 @@ package:
 source:
     fn: avro-c-{{ version }}.tar.gz
     url: https://archive.apache.org/dist/avro/avro-{{ version }}/c/avro-c-{{ version }}.tar.gz
-    sha1: 93abae3d078e34900c1fee38fb0af2dcde624c8b
+    sha1: {{ hash }}
 
 build:
-    number: 2
+    number: 0
     skip: True  # [win]
 
 requirements:
