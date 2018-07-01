@@ -16,18 +16,20 @@ build:
 
 requirements:
     build:
-        - toolchain
         - cmake
-        - snappy
-        - jansson
-        - xz 5.2.*
         - pkg-config  # [osx]
-        - zlib 1.2.*
-    run:
-        - xz 5.2.*
+        - {{ compiler('c') }}
+        - {{ compiler('cxx') }}
+    host:
         - snappy
         - jansson
-        - zlib 1.2.*
+        - xz
+        - zlib
+    run:
+        - xz
+        - snappy
+        - jansson
+        - zlib
 
 test:
     commands:

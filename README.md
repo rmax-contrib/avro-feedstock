@@ -14,14 +14,16 @@ Summary: Avro is a serialization and RPC framework.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/avro-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/avro-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/avro-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/avro-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/avro-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/avro-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/avro-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/avro-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/avro/badges/version.svg)](https://anaconda.org/conda-forge/avro)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/avro/badges/downloads.svg)](https://anaconda.org/conda-forge/avro)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-avro-green.svg)](https://anaconda.org/conda-forge/avro) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/avro.svg)](https://anaconda.org/conda-forge/avro) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/avro.svg)](https://anaconda.org/conda-forge/avro) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/avro.svg)](https://anaconda.org/conda-forge/avro) |
 
 Installing avro
 ===============
@@ -66,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
